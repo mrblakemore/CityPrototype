@@ -13,6 +13,10 @@
 		5A73339B29A660E300F70DFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A73339929A660E300F70DFE /* Main.storyboard */; };
 		5A73339D29A660EC00F70DFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A73339C29A660EC00F70DFE /* Assets.xcassets */; };
 		5A7333A029A660EC00F70DFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A73339E29A660EC00F70DFE /* LaunchScreen.storyboard */; };
+		5A7C7E9729A66A400014A050 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C7E9629A66A400014A050 /* WebViewController.swift */; };
+		5A7C7E9929A66D970014A050 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C7E9829A66D970014A050 /* LocationViewController.swift */; };
+		5A7C7E9B29AE5DFC0014A050 /* ApplyForJobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C7E9A29AE5DFC0014A050 /* ApplyForJobViewController.swift */; };
+		5AC329D629FF4652007EE582 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC329D529FF4652007EE582 /* ReportViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		5A73339C29A660EC00F70DFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A73339F29A660EC00F70DFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A7333A129A660EC00F70DFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A7C7E9629A66A400014A050 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		5A7C7E9829A66D970014A050 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		5A7C7E9A29AE5DFC0014A050 /* ApplyForJobViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyForJobViewController.swift; sourceTree = "<group>"; };
+		5AC329D529FF4652007EE582 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +67,11 @@
 				5A73339329A660E300F70DFE /* AppDelegate.swift */,
 				5A73339529A660E300F70DFE /* SceneDelegate.swift */,
 				5A73339729A660E300F70DFE /* ViewController.swift */,
+				5AC329D529FF4652007EE582 /* ReportViewController.swift */,
 				5A73339929A660E300F70DFE /* Main.storyboard */,
+				5A7C7E9A29AE5DFC0014A050 /* ApplyForJobViewController.swift */,
+				5A7C7E9829A66D970014A050 /* LocationViewController.swift */,
+				5A7C7E9629A66A400014A050 /* WebViewController.swift */,
 				5A73339C29A660EC00F70DFE /* Assets.xcassets */,
 				5A73339E29A660EC00F70DFE /* LaunchScreen.storyboard */,
 				5A7333A129A660EC00F70DFE /* Info.plist */,
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A7C7E9929A66D970014A050 /* LocationViewController.swift in Sources */,
+				5A7C7E9B29AE5DFC0014A050 /* ApplyForJobViewController.swift in Sources */,
 				5A73339829A660E300F70DFE /* ViewController.swift in Sources */,
 				5A73339429A660E300F70DFE /* AppDelegate.swift in Sources */,
 				5A73339629A660E300F70DFE /* SceneDelegate.swift in Sources */,
+				5A7C7E9729A66A400014A050 /* WebViewController.swift in Sources */,
+				5AC329D629FF4652007EE582 /* ReportViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +232,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -295,6 +311,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +340,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
